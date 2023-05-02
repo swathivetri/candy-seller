@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Crud Operation</title>
+    <link type="text/css" rel="stylesheet" href="style.css"
+</head>
+<body>
+    <table>
+        <tr>
+            <td>
+                <form autocomplete="on" onsubmit="onFormSubmit()">
+                    <div>
+                        <label for="description">Description</label>
+                        <input type="text" name="description" id="description">
+                    </div>
+                    <div>
+                        <label for="candy">Candy Name</label>
+                        <input type="text" name="candy" id="candy">
+                    </div>
+                    <div>
+                        <label for="quantity">Quantity</label>
+                        <input type="number" name="quantity" id="quantity">
+                    </div>
+                    <div>
+                        <label for="perPrice">Price</label>
+                        <input type="number" name="perPrice" id="perPrice">
+                    </div>
+
+                    <div class="form_action--button">
+                        <input type="submit" value="AddItem">
+                        <input type="reset" value="Reset">
+                    </div>
+                </form>
+                <td>
+                    <table class="list" id="storeList">
+                        <thead>
+                            <tr>
+                                <th>Description</th>
+                                <th>Candy Name</th>
+                                <th>Quantity</th>
+                                <th>Price</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                        </tbody>
+                    </table>
+                </td>
+            </td>
+        </tr>
+    </table>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script type="text/javascript" src="./script.js"></script>
+</body>
+</html>
